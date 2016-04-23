@@ -5,6 +5,8 @@
 # callsign proxy there is no in point running this script. Just run
 # `git pull` instead of this script!
 
+export GIT_AUTHOR_NAME="Pula-ajan puhelinvaihde"
+export GIT_AUTHOR_EMAIL="noc@pupu.li"
 cd "`dirname $0`"
 curl -Ssf 'https://eservices.viestintavirasto.fi/Licensesservices/Forms/AmateurLicenses.aspx' -F __EVENTTARGET= -F ButtonDownload= -o oh-callsigns.tsv
 git commit -qm "Update call signs" oh-callsigns.tsv # Explicitly commit only callsigns

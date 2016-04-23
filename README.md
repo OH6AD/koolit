@@ -12,9 +12,11 @@ Maintainer: [Joel Lehtonen](https://github.com/zouppen/) / OH6EYA
 
 ## How to use
 
-Just `git pull` this repository.
+Just clone this repository and then `git pull` periodically
+(e.g. in a cron job or systemd timer).
 
-NB! Do not use `fetch_from_ficora` unless you are hosting a mirror yourself.
+**NB!** Please do not use `fetch_from_ficora` unless you are hosting a mirror
+yourself.
 
 ## File format
 
@@ -27,3 +29,9 @@ The first column contains the call sign. The second column contains status, whic
 
 Call signs on cooling period may contain an asterisk (such as
 `OH*EEG`). That means the sign is reserved in all regions (0-9).
+
+## License
+
+All files except `oh-callsigns.tsv` are certainly public domain. The call
+sign data is most likely public domain, but the data is sourced from
+FICORA and I'm not a lawyer.
