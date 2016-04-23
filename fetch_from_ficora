@@ -1,0 +1,11 @@
+#!/bin/sh -eu
+
+# This updates the call list from FICORA, creates a commit, and pushes
+# it to your git server (such as Github). If you are not hosting
+# callsign proxy there is no in point running this script. Just run
+# `git pull` instead of this script!
+
+cd "`dirname $0`"
+curl -Ssf 'https://eservices.viestintavirasto.fi/Licensesservices/Forms/AmateurLicenses.aspx' -F __EVENTTARGET= -F ButtonDownload= -o oh-callsigns.tsv
+git commit -qm "Update call signs" oh-callsigns.tsv # Explicitly commit only callsigns
+git push -q
