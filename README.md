@@ -25,7 +25,8 @@ The first column contains the call sign. The second column contains status, whic
 * `VOIMAS`: Active call sign
 * `KARENSSI`: On cooling period. This call sign becomes available
   after two years of inactivity.
-  [source](https://www.viestintavirasto.fi/taajuudet/radioluvat/radioamatoorit.html#radiolupauusitaanviidenvuodenvalein)
+  ([source](https://www.viestintavirasto.fi/taajuudet/radioluvat/radioamatoorit.html#radiolupauusitaanviidenvuodenvalein))
+* `VARAUS`: Reservation. These are quite rare and I have no idea.
 
 Call signs on cooling period may contain an asterisk (such as
 `OH*EEG`). That means the sign is reserved in all regions (0-9).
