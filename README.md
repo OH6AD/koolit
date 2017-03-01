@@ -21,13 +21,13 @@ yourself.
 
 ## File format
 
-The first column contains the call sign. The second column contains the status information, which may be either:
+The first column contains the call sign. The second column contains the status information. See table below:
 
-* `VOIMAS`: Active call sign
-* `KARENSSI`: On a grace period. This call sign becomes available
-  after two years from expiry.
-  ([source](https://www.viestintavirasto.fi/taajuudet/radioluvat/radioamatoorit.html#radiolupauusitaanviidenvuodenvalein))
-* `VARAUS`: The call sign has been reserved for an applicant but not yet been issued.
+Key | Legend
+--- | ---
+`VOIMAS` | Active call sign
+`KARENSSI` | On a grace period. This call sign becomes available after two years from expiry. ([source](https://www.viestintavirasto.fi/taajuudet/radioluvat/radioamatoorit.html#radiolupauusitaanviidenvuodenvalein))
+`VARAUS` | The call sign has been reserved for an applicant but not yet been issued.
 
 Call signs on grace period may contain an asterisk (such as
 `OH*EEG`). That means the sign is reserved in all regions (0-9).
